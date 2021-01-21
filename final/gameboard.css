@@ -1,0 +1,175 @@
+body {
+  background-image: url('photos/water.gif');
+}
+.container{
+   display: flex;
+   justify-content: center;
+   width: 100%;
+}
+
+.battleship-grid{
+  margin: 2vmin;
+  display: grid;
+  background-color: darkslategray;
+  grid-template-rows: repeat(10, 4.6vmin);
+  grid-template-columns: repeat(10,4.6vmin);
+}
+.grid-computer > .taken{
+  background-color: darkslategray; 
+}
+.battleship-grid div{
+  border: 1px solid hsla(0, 0%, 100%, .2)
+}
+.taken,
+.ship {
+  background-color: gray;
+}
+
+.taken.start.vertical{
+  border-top-left-radius: 50% ;
+  border-top-right-radius: 50% ;
+}
+.taken.end.vertical{
+  border-bottom-left-radius: 50% ;
+  border-bottom-right-radius: 50% ;
+}
+.taken.start.horizontal{
+  border-top-left-radius: 50% ;
+  border-bottom-left-radius: 50% ;
+}
+.taken.end.horizontal{
+  border-top-right-radius: 50% ;
+  border-bottom-right-radius: 50% ;
+}
+.grid-display {
+ display: flex;
+ flex-wrap: wrap;
+ border-radius: 2.3vmin;
+}
+
+.ship > div{
+  width: 4.6vmin;
+  height: 4.6vmin;
+}
+.btn{
+  font-size: inherit;
+  background-color: rgb(8, 58, 23);
+  padding: .3em ;
+  border-radius: .2em;
+  font-family: sans-serif;
+  color: floralwhite;
+  border: none;
+  outline: none;
+  text-decoration: none;
+
+}
+.ship{
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 2.3vmin;
+}
+.destroyer-container {
+  width: 80px;
+  height: 40px;
+ 
+  margin: 10px;
+  display: flex;
+}
+.destroyer-container-vertical {
+  width: 40px;
+  height: 80px;
+ 
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.submarine-container {
+  width: 120px;
+  height: 40px;
+  
+  margin: 10px;
+  display: flex;
+}
+
+.submarine-container-vertical {
+  width: 40px;
+  height: 120px;
+  
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cruiser-container {
+  width: 120px;
+  height: 40px;
+  margin: 10px;
+  display: flex;
+}
+
+.cruiser-container-vertical {
+  width: 40px;
+  height: 120px;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.battleship-container {
+  width: 160px;
+  height: 40px;
+  margin: 10px;
+  display: flex;
+}
+
+.battleship-container-vertical {
+  width: 40px;
+  height: 160px;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.carrier-container {
+  width: 200px;
+  height: 40px;
+  margin: 10px;
+  display: flex;
+}
+
+.carrier-container-vertical {
+  width: 40px;
+  height: 200px;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.ship div {
+  width: 40px;
+  height: 40px;
+}
+.hidden-info{
+  font-size: 1.5rem;
+  align-items: center;
+  flex-direction: column;
+}
+.info-text{
+  margin: 1rem;
+  font-family: sans-serif;
+  color: floralwhite;
+}
+.boom {
+  background-image:url('photos/hit.gif');
+  background-size: contain;
+}
+
+.miss {
+  background-image:url('photos/water.gif');
+  background-size: contain;
+}
+#info{
+  font-family: "Raleway", sans-serif;
+  color: floralwhite;
+}

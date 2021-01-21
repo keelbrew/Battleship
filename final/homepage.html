@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en-gb">
+  <head>
+   
+  	<meta charset="utf-8">
+  	<title>Video player example</title>
+  	<link rel="stylesheet" type="text/css" href="homepage.css">
+  </head>
+  <body>
+      <div class="top">
+        <div class="splash-container">
+            <h1 class="splash-title">Battleship</h1>
+            <div>
+              <a href="gameboard.html" class="btn splash-btn">Play Battlship</a>
+              <a href="documentation.html" class="btn splash-btn">Documentation</a>
+            </div>
+          </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <div class="player">
+      <video  class='center' controls>
+        <source src="videos/Battlship.mp4" type="video/mp4">
+        <source src="videos/Battlship.mp4" type="video/webm">  
+      </video>
+      <div class="controls">
+        <button class="play" data-icon="P" aria-label="play pause toggle"></button>
+        <button class="stop" data-icon="S" aria-label="stop"></button>
+        <div class="timer"><div></div><span aria-label="timer">00:00</span></div>
+        <button class="rwd" data-icon="B" aria-label="rewind"></button>
+        <button class="fwd" data-icon="F" aria-label="fast forward"></button>
+      </div>
+    </div>
+    <script src="homepage.js"></script>
+</div>
+  </body>
+</html>
